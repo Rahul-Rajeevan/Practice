@@ -1,5 +1,6 @@
 // console.log(typeof null) //empty object
-
+// console.log(typeof undefined) //undefined
+// console.log(typeof NaN)  //Number
 
 // array is mutable, string is immutable str[3]="a" is not allowed
 
@@ -23,3 +24,5 @@
 
 // console.log({}==null)  //false
 // console.log({}=={})  //false
+// console.log([]==[]) //false
+
