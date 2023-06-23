@@ -1,0 +1,6 @@
+Asynchronous programming is a programming paradigm that allows multiple tasks 
+to be executed concurrently without blocking the execution of the main program. 
+JavaScript, being a single-threaded language, relies heavily on asynchronous 
+programming to handle time-consuming operations, such as network requests and 
+file operations, without freezing the user interface.
+

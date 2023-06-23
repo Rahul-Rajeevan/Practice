@@ -1,0 +1,16 @@
+Modules are a way to organize and reuse code in JavaScript applications. They provide a mechanism for splitting code into separate files, making it easier to manage and maintain large-scale projects.
+
+
+JavaScript supports two types of modules: CommonJS and ES modules.
+CommonJS modules are used in Node.js environments, while ES modules are the standardized module format in modern browsers and newer versions of Node.js.
+ES modules use the import and export keywords, while CommonJS modules use the require() function and module.exports.
+
+// math.js module
+const add = (a, b) => a + b;
+module.exports = { add };
+
+// main.js module
+const { add } = require('./math.js');
+console.log(add(2, 3)); // Output: 5
+
+
