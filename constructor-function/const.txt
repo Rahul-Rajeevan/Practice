@@ -1,0 +1,8 @@
+Prototypes and Prototype Chain:
+
+Each JavaScript object has a prototype, which is an object from which it inherits 
+properties and methods.
+The prototype of an object can be accessed using the prototype property.
+Objects created with the same constructor share the same prototype object.
+The prototype chain is a mechanism that allows objects to inherit properties and 
+methods from their prototypes.

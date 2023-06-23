@@ -1,4 +1,4 @@
-// console.log(typeof null) //empty object
+// console.log(typeof null) //empty object 
 // console.log(typeof undefined) //undefined
 // console.log(typeof NaN)  //Number
 
@@ -26,3 +26,7 @@
 // console.log({}=={})  //false
 // console.log([]==[]) //false
 
+
+
+// short circuit
+// arr&&arr.map((e)=>{})

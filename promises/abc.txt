@@ -1,1 +1,10 @@
-Hello people
+Asynchronous programming is essential in JavaScript to handle time-consuming tasks like fetching data from a server, reading files, or performing animations without blocking the main thread. Promises provide a way to manage asynchronous operations and handle their results.
+
+Here's what we'll cover in this topic:
+
+Introduction to Promises:
+
+Promises are objects that represent the eventual completion or failure of an asynchronous operation and its resulting value.
+Promises have three states: pending, fulfilled, or rejected.
+The Promise constructor takes a function called the executor, which accepts two arguments: resolve and reject.
+
