@@ -1,0 +1,26 @@
+.container {
+  position: relative;
+  height: 200px;
+}
+
+.box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+.box:nth-child(1) {
+  top: 10px;
+  left: 10px;
+}
+
+.box:nth-child(2) {
+  top: 50px;
+  left: 50px;
+}
+
+.box:nth-child(3) {
+  top: 100px;
+  left: 100px;
+}

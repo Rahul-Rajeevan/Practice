@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Example</title>
+  <style>
+    .error {
+      border: 2px solid red;
+    }
+  </style>
+</head>
+<body>
+    <input type="text" id="username" />
+    <button type="submit">Submit</button>
+  <script>
+    const input = document.querySelector('#username');
+
+    input.addEventListener('blur', () => {
+      const value = input.value;
+      if (value.length < 5) {
+        input.classList.add('error');
+        // Display error message
+      } else {
+        input.classList.remove('error');
+        // Remove error message
+      }
+    });
+  </script>
+</body>
+</html>

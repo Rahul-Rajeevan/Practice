@@ -1,0 +1,17 @@
+.navbar{
+    background-color: yellow;
+}
+
+.nav-item{
+    display: inline-block;
+    border: 1px solid red;
+    position: relative;
+}
+.nav-link{
+    padding: 10px 20px;
+}
+.subwindow{
+    position: absolute;
+    top: 100%;
+    left: 0;
+}

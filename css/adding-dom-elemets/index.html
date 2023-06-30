@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attribute Manipulation Example</title>
+</head>
+<body>
+  <img id="myImage" src="image.jpg" alt="An image" width="200" height="200">
+  
+  <script>
+
+// Create a new article element
+const newArticle = document.createElement('article');
+
+// Add a class to the new article
+newArticle.classList.add('backpack');
+
+// Set an ID for the new article
+newArticle.setAttribute('id', 'everyday');
+
+// Set the content of the new article using a template literal
+newArticle.innerHTML = `
+  <h2>Everyday Backpack</h2>
+  <p>A versatile backpack for your daily needs.</p>
+`;
+
+// Append the new article to the main element after the page header
+const main = document.querySelector('main');
+const pageHeader = document.querySelector('.page-header');
+main.insertBefore(newArticle, pageHeader.nextSibling);
+</script>
+</body>
+</html>

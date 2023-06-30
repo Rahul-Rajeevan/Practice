@@ -1,0 +1,1 @@
+Presentational components, also known as dumb or stateless components, focus solely on the presentation of UI. They receive data and callbacks via props and are primarily concerned with rendering UI elements. Presentational components do not have any knowledge of Redux or application state. They are reusable and can be used in different parts of the application.

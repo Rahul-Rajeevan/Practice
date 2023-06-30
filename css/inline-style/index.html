@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .myElement {
+      color: blue;
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="myElement" id="element">Hello, World!</div>
+
+  <script>
+    // Accessing and modifying inline styles
+    var element = document.getElementById("element");
+    console.log(element.style.color); // Output: "blue"
+    console.log(element.style.backgroundColor); // Output: "yellow"
+
+    element.style.color = "red"; // Modifying color
+    element.style.fontSize = "20px"; // Adding a new style property
+
+    console.log(element.style.color); // Output: "red"
+    console.log(element.style.fontSize); // Output: "20px"
+  </script>
+</body>
+</html>

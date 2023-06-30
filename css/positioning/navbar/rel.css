@@ -1,0 +1,47 @@
+.navbar {
+  background-color: #333;
+  color: #fff;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;  /* hztal alignment of home, about */
+  position: relative;
+}
+
+.nav-link {
+  /* display: block; */
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.subwindow {
+  position: absolute;
+  /* top: 100%;
+  left: 0; */
+  display: none;
+  background-color: pink;
+  border: 1px solid red;
+  padding: 10px;
+}
+
+.nav-item:hover .subwindow {
+  display: block;
+}
+
+.subwindow a {
+  display: block;
+  padding: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.subwindow a:hover {
+  background-color: #555;
+}

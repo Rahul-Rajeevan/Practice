@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attribute Manipulation Example</title>
+</head>
+<body>
+  <img id="myImage" src="image.jpg" alt="An image" width="200" height="200">
+  
+  <script>
+    // Get the image element
+    const image = document.getElementById('myImage');
+    
+    // Check if the 'alt' attribute exists
+    const hasAltAttribute = image.hasAttribute('alt');
+    console.log(`Has 'alt' attribute: ${hasAltAttribute}`);
+    
+    // Get the value of the 'src' attribute
+    const srcValue = image.getAttribute('src');
+    console.log(`Value of 'src' attribute: ${srcValue}`);
+    
+    // Set the 'alt' attribute to a new value
+    image.setAttribute('alt', 'A different image');
+    
+    // Add a new attribute 'title'
+    image.setAttribute('title', 'Image Title');
+    
+    // Remove the 'width' attribute
+    image.removeAttribute('width');
+    
+    // Check the updated attributes
+    const updatedAltValue = image.getAttribute('alt');
+    const titleValue = image.getAttribute('title');
+    const hasWidthAttribute = image.hasAttribute('width');
+    
+    console.log(`Updated 'alt' attribute: ${updatedAltValue}`);
+    console.log(`'title' attribute: ${titleValue}`);
+    console.log(`Has 'width' attribute: ${hasWidthAttribute}`);
+  </script>
+</body>
+</html>
