@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudo-element Selectors</title>
+    <style>
+        /* ::first-line and ::first-letter */
+        p::first-line {
+            color: blue;
+            font-weight: bold;
+        }
+
+        p::first-letter {
+            font-size: 2em;
+            color: red;
+        }
+
+        /* ::before and ::after */
+        h1::before {
+            content: "🌟 ";
+        }
+
+        h1::after {
+            content: " 🌟";
+        }
+
+        /* ::placeholder */
+        input::placeholder {
+            color: gray;
+            font-style: italic;
+        }
+
+        /* ::selection */
+        p::selection {
+            background-color: yellow;
+            color: black;
+        }
+
+        /* ::marker */
+        li::marker {
+            content: "➤";
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>::before and ::after Pseudo-elements</h1>
+
+    <p>
+        This is the first line of a paragraph. This paragraph demonstrates the use of the ::first-line pseudo-element.
+    </p>
+
+    <input type="text" placeholder="Type something...">
+
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ul>
+</body>
+</html>

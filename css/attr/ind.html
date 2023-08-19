@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS attr() Function Example</title>
+    <style>
+      .rating-container::before {
+        content: "Rating: " attr(data-rating); /* Use the 'data-rating' attribute value */
+        font-weight: bold;
+      }
+
+      .rating-container:nth-child(2)::before {
+        content: "Rating: " attr(data-rating, "Not Available"); /* Use fallback value if 'data-rating' attribute is missing */
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-rating="4" class="rating-container">Rating: 4</div>
+    <div class="rating-container">Rating: N/A</div>
+  </body>
+</html>

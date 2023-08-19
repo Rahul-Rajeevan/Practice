@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Counters Example</title>
+    <style>
+      /* Reset default styles for the list */
+      ol,
+      li {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Define the custom counter */
+      .custom-list {
+        counter-reset: myCounter;
+        list-style-type: none; /* Hide the default list marker */
+      }
+
+      /* Increment the counter for each list item */
+      .custom-list li {
+        counter-increment: myCounter;
+      }
+
+      /* Display the counter value before each list item */
+      .custom-list li::before {
+        content: counter(myCounter) ". "; /* Add a period after the counter value */
+      }
+    </style>
+  </head>
+  <body>
+    <ol class="custom-list">
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+    </ol>
+  </body>
+</html>

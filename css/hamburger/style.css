@@ -1,0 +1,88 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hide the checkbox input and the default list style */
+.nav-toggle {
+    display: none;
+}
+
+/* Hamburger Icon Styles */
+.hamburger {
+    cursor: pointer;
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+}
+
+.hamburger-bar {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transition: transform 0.3s ease;
+}
+
+.hamburger-bar:nth-child(1) {
+    top: 0;
+}
+
+.hamburger-bar:nth-child(2), .hamburger-bar:nth-child(3) {
+    top: 50%;
+}
+
+.hamburger-bar:nth-child(3) {
+    bottom: 0;
+}
+
+/* Navigation Menu Styles */
+.menu {
+    display: none;
+}
+
+/* Show the navigation menu when the checkbox is checked */
+.nav-toggle:checked ~ .menu {
+    display: block;
+}
+
+/* Style the navigation menu links */
+.menu ul {
+    list-style-type: none;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Media Query for Responsiveness */
+@media screen and (min-width: 768px) {
+    .hamburger {
+        display: none; /* Hide the hamburger icon on larger screens */
+    }
+    
+    .menu {
+        display: block; /* Show the navigation menu on larger screens */
+    }
+    
+    .menu ul {
+        background-color: transparent;
+    }
+    
+    .menu li {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+}

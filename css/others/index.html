@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visually Hidden Element</title>
+    <style>
+        .visually-hidden {
+            position: absolute;
+            left: -9999px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Our Website</h1>
+
+    <!-- Visually hidden element -->
+    <p class="visually-hidden">Important information for screen readers.</p>
+
+    <p>This is the main content of the page.</p>
+</body>
+</html>
+
+<!-- This approach allows you to hide an element from the visual display while keeping it accessible to screen readers and other assistive technologies. It ensures that users with disabilities can still perceive the content contained within the hidden element. -->

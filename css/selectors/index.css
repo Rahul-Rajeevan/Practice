@@ -1,0 +1,46 @@
+*{
+    font-style: italic;
+}
+p{
+    color: red;
+}
+div p{
+    color: blue;
+}
+div p:first-child{
+    color: green;
+}
+div div p:first-child{
+    color: black;
+}
+div p:nth-child(3){
+    color: pink;
+}
+.und{
+    font-size: 30px;
+}
+.my1{
+    text-align: center;
+    text-decoration: underline;
+}
+#my{
+    text-decoration: line-through;
+}
+.div1>h3{
+    background-color: blue;
+}
+h3+div{
+    background-color: yellow;
+}
+h3~h4{
+    background-color: pink;
+}
+h4:hover{
+    background-color: aqua;
+}
+#line::first-line{
+    color: brown;
+}
+h3,h4,a{
+
+}

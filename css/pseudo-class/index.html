@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudo-class Selectors</title>
+    <style>
+        /* Link styles */
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: red;
+        }
+
+        /* List styles */
+        ul li:first-child {
+            color: green;
+        }
+
+        ul li:last-child {
+            color: red;
+        }
+
+        ul li:nth-child(2) {
+            color: blue;
+        }
+
+        ul li:nth-last-child(2) {
+            color: orange;
+        }
+
+        /* Input styles */
+        input:focus {
+            border: 2px solid blue;
+        }
+
+        input:disabled {
+            background-color: lightgray;
+        }
+
+        input:required {
+            border: 2px solid red;
+        }
+
+        input:optional {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-class Selectors Example</h1>
+
+    <p>
+        <a href="#">Link Example</a>
+    </p>
+
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+        <li>List Item 5</li>
+    </ul>
+
+    <form>
+        <label for="input1">Input Field:</label>
+        <input type="text" id="input1" required>
+        <br>
+        <label for="input2">Disabled Input:</label>
+        <input type="text" id="input2" disabled>
+        <br>
+        <label for="input3">Optional Input:</label>
+        <input type="text" id="input3">
+    </form>
+</body>
+</html>

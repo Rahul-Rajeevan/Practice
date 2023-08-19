@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disable Text Selection</title>
+    <style>
+        .disable-selection {
+            user-select: none;
+            /* Optional: To disable selection in older versions of IE */
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="disable-selection">This heading text cannot be selected.</h1>
+    <p>This paragraph text can be selected normally.</p>
+</body>
+</html>

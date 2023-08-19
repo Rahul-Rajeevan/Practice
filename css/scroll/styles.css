@@ -1,0 +1,26 @@
+/* styles.css */
+body {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden; /* Hide the main scrollbar */
+  }
+  
+  .scroll-container {
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style for images inside the scrollable div */
+  .scroll-container img {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+  

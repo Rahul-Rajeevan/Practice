@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Responsive Equal-Height Grid of Cards</title>
+    <style>
+      /* Reset some default styles */
+      body,
+      h2,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Grid Layout */
+      .grid {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+      }
+
+      /* Card Layout */
+      .card {
+        display: table-cell;
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+        vertical-align: top;
+      }
+
+      /* Card Images */
+      .card img {
+        width: 100%;
+        height: auto;
+        max-height: 200px; /* Limit the image height for consistency */
+      }
+
+      /* Card Headings */
+      .card h2 {
+        font-size: 24px;
+        margin: 10px 0;
+      }
+
+      /* Card Content */
+      .card p {
+        font-size: 16px;
+      }
+
+      /* Media Query for Responsiveness */
+      @media screen and (max-width: 768px) {
+        .card {
+          display: block; /* Switch to a single-column layout on small screens */
+          margin-bottom: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="card">
+        <img src="https://www.bhg.com/thmb/H9VV9JNnKl-H1faFXnPlQfNprYw=/1799x0/filters:no_upscale():strip_icc()/white-modern-house-curved-patio-archway-c0a4a3b3-aa51b24d14d0464ea15d36e05aa85ac9.jpg" alt="Image 1" />
+        <h2>Card 1</h2>
+        <p>Content for Card 1.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.bhg.com/thmb/H9VV9JNnKl-H1faFXnPlQfNprYw=/1799x0/filters:no_upscale():strip_icc()/white-modern-house-curved-patio-archway-c0a4a3b3-aa51b24d14d0464ea15d36e05aa85ac9.jpg" alt="Image 2" />
+        <h2>Card 2</h2>
+        <p>Content for Card 2.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.bhg.com/thmb/H9VV9JNnKl-H1faFXnPlQfNprYw=/1799x0/filters:no_upscale():strip_icc()/white-modern-house-curved-patio-archway-c0a4a3b3-aa51b24d14d0464ea15d36e05aa85ac9.jpg" alt="Image 2" />
+        <h2>Card 2</h2>
+        <p>Content for Card 2.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.bhg.com/thmb/H9VV9JNnKl-H1faFXnPlQfNprYw=/1799x0/filters:no_upscale():strip_icc()/white-modern-house-curved-patio-archway-c0a4a3b3-aa51b24d14d0464ea15d36e05aa85ac9.jpg" alt="Image 2" />
+        <h2>Card 2</h2>
+        <p>Content for Card 2.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.bhg.com/thmb/H9VV9JNnKl-H1faFXnPlQfNprYw=/1799x0/filters:no_upscale():strip_icc()/white-modern-house-curved-patio-archway-c0a4a3b3-aa51b24d14d0464ea15d36e05aa85ac9.jpg" alt="Image 2" />
+        <h2>Card 2</h2>
+        <p>Content for Card 2.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.bhg.com/thmb/H9VV9JNnKl-H1faFXnPlQfNprYw=/1799x0/filters:no_upscale():strip_icc()/white-modern-house-curved-patio-archway-c0a4a3b3-aa51b24d14d0464ea15d36e05aa85ac9.jpg" alt="Image 2" />
+        <h2>Card 2</h2>
+        <p>Content for Card 2.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.bhg.com/thmb/H9VV9JNnKl-H1faFXnPlQfNprYw=/1799x0/filters:no_upscale():strip_icc()/white-modern-house-curved-patio-archway-c0a4a3b3-aa51b24d14d0464ea15d36e05aa85ac9.jpg" alt="Image 2" />
+        <h2>Card 2</h2>
+        <p>Content for Card 2.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.bhg.com/thmb/H9VV9JNnKl-H1faFXnPlQfNprYw=/1799x0/filters:no_upscale():strip_icc()/white-modern-house-curved-patio-archway-c0a4a3b3-aa51b24d14d0464ea15d36e05aa85ac9.jpg" alt="Image 2" />
+        <h2>Card 2</h2>
+        <p>Content for Card 2.</p>
+      </div>
+      <!-- Add more cards as needed -->
+    </div>
+  </body>
+</html>

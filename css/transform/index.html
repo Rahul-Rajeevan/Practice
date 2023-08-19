@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transformations Example</title>
+    <style>
+        .transform-example {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            margin: 20px;
+        }
+
+        /* Translate */
+        .translate-example {
+            transform: translate(50px, 50px);
+        }
+
+        /* Scale */
+        .scale-example {
+            transform: scale(1.5);
+        }
+
+        /* Rotate */
+        .rotate-example {
+            transform: rotate(45deg);
+        }
+
+        /* Skew */
+        .skew-example {
+            transform: skew(20deg, 30deg);
+        }
+
+        /* 3D Transform */
+        .rotate3d-example {
+            transform: rotate3d(1, 1, 1, 45deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Transformations Example</h1>
+
+    <div class="transform-example translate-example">Translate</div>
+    <div class="transform-example scale-example">Scale</div>
+    <div class="transform-example rotate-example">Rotate</div>
+    <div class="transform-example skew-example">Skew</div>
+    <div class="transform-example rotate3d-example">3D Rotate</div>
+</body>
+</html>
